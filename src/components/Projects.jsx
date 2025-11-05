@@ -5,32 +5,71 @@ const Projects = () => {
     {
       title: "Full-Stack E-Commerce Platform",
       description:
-        "Developed complete online store using MERN stack with JWT authentication",
+        "Developed a complete online store using MERN stack with JWT authentication and secure payment integration",
       features: [
-        "Implemented responsive UI with Tailwind CSS and mobile-first approach",
-        "Utilized Prisma ORM with MongoDB for efficient product management",
-        "Deployed with separate frontend/backend hosting",
+        "Implemented responsive UI with Tailwind CSS and mobile-first approach for optimal user experience",
+        "Utilized Prisma ORM with MongoDB for efficient product and order management",
+        "Deployed full-stack application with separate frontend/backend hosting on cloud platforms",
       ],
-      tech: ["React", "Node.js", "MongoDB", "Tailwind CSS", "Prisma"],
+      tech: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS", "Prisma"],
+      year: "2024",
+      location: "Nagpur, India",
+      code: "https://github.com/Prayas2910/shoppi-sphere.git",
     },
     {
       title: "Team Task Management Application",
       description:
-        "Built collaborative tool with real-time updates using Socket.io",
+        "Built collaborative productivity tool with real-time updates using Socket.io for seamless team coordination",
       features: [
-        "Created drag-drop interface with React Beautiful DnD library",
-        "Implemented role-based access control and team collaboration features",
+        "Created drag-and-drop interface with React Beautiful DnD library for intuitive task management",
+        "Implemented role-based access control and team collaboration features for secure project organization",
+        "Used Prisma with MongoDB for complex data relationships and team workflow management",
       ],
-      tech: ["React", "Socket.io", "Node.js", "MongoDB"],
+      tech: ["React", "Socket.io", "Node.js", "MongoDB", "Prisma"],
+      year: "2024",
+      location: "Nagpur, India",
+      code: "https://github.com/Prayas2910/Team-Task-Management.git",
     },
     {
-      title: "Library Management System",
-      description: "Developed using Django framework with SQL database",
+      title: "Music Player",
+      description:
+        "Designed an offline music player for Android phones that can read and play all songs in device storage",
       features: [
-        "Implemented user authentication and book management system",
-        "Created admin panel for system administration",
+        "Implemented NotificationManager and RemoteView for interactive notifications with playback controls",
+        "Generated comprehensive list of all songs on the android device with metadata information",
+        "Developed separate Player GUI with cover photo backgrounds and interactive notification widgets",
       ],
-      tech: ["Django", "SQL", "Python", "HTML/CSS"],
+      tech: ["Android", "Java/Kotlin", "NotificationManager"],
+      year: "2024",
+      location: "Nagpur, India",
+      code: "https://github.com/Prayas2910/music-player.git",
+    },
+    {
+      title: "2048Go Game",
+      description: "Developed complete clone of 2048 puzzle game using Go programming language",
+      features: [
+        "Implemented core game mechanics including tile movement, merging logic, and score tracking",
+        "Built random tile generation and win/lose condition detection systems",
+        "Served as practical Go programming exercise demonstrating language proficiency",
+      ],
+      tech: ["Go"],
+      year: "2024",
+      location: "Nagpur, India",
+      code: "https://github.com/Prayas2910/2048Go.git",
+    },
+    {
+      title: "Personal Portfolio Website",
+      description:
+        "Built responsive portfolio website showcasing projects and technical skills with modern design principles",
+      features: [
+        "Implemented modern CSS Grid and Flexbox layouts for optimal visual presentation",
+        "Optimized for cross-browser compatibility and mobile devices ensuring wide accessibility",
+        "Deployed using modern web hosting solutions with continuous integration and deployment",
+      ],
+      tech: ["React", "Tailwind CSS", "Netlify/Vercel"],
+      year: "2024",
+      location: "Nagpur, India",
+      code: "https://github.com/Prayas2910/Personal-Portfolio.git",
     },
   ];
 
@@ -48,9 +87,27 @@ const Projects = () => {
               <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                 <i className="fas fa-project-diagram text-primary"></i>
               </div>
-              <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-3">
-                {project.title}
-              </h3>
+              <div className="flex items-start justify-between mb-3">
+                <div>
+                  <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100">
+                    {project.title}
+                  </h3>
+                  <div className="text-xs text-gray-500 dark:text-gray-400">
+                    {project.year} • {project.location}
+                  </div>
+                </div>
+                {project.code && (
+                  <div className="text-sm">
+                    <a
+                      href={project.code}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-primary hover:underline">
+                      [Code]
+                    </a>
+                  </div>
+                )}
+              </div>
               <p className="text-gray-600 dark:text-gray-300 mb-4">{project.description}</p>
               <ul className="space-y-2 mb-4">
                 {project.features.map((feature, idx) => (
