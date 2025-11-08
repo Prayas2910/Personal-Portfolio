@@ -36,11 +36,6 @@ const Skills = () => {
       ],
       icon: "fas fa-tools",
     },
-    {
-      title: "Web Security",
-      skills: ["OWASP Principles"],
-      icon: "fas fa-shield-alt",
-    },
   ];
 
   return (
