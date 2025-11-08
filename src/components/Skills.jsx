@@ -34,7 +34,6 @@ const Skills = () => {
         "VS Code",
         "Linux",
       ],
-      icon: "fas fa-tools",
     },
   ];
 
