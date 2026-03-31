@@ -42,7 +42,6 @@ const Achievements = () => {
 
         {/* Achievements */}
         <div className="max-w-4xl mx-auto mb-12">
-          <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-8 text-center"></h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {achievements.map((achievement, index) => (
               <div
