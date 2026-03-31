@@ -51,12 +51,12 @@ const Contact = () => {
                 </div>
                 <div className="flex space-x-4 mt-6">
                   <a
-                    href="https://linkedin.com/in/prayas-sawwalakhe"
+                    href="https://www.linkedin.com/in/prayas-sawwalakhe-713034222/"
                     className="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition-colors">
                     <i className="fab fa-linkedin"></i>
                   </a>
                   <a
-                    href="https://github.com/prayas-sawwalakhe"
+                    href="https://github.com/Prayas2910"
                     className="bg-gray-800 text-white p-3 rounded-lg hover:bg-gray-900 transition-colors">
                     <i className="fab fa-github"></i>
                   </a>
